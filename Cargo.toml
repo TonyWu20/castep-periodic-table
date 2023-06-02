@@ -3,7 +3,7 @@ name = "castep-periodic-table"
 description = "Periodic-table-like database for relevant usage in CASTEP"
 homepage = "https://github.com/TonyWu20/castep-periodic-table"
 repository = "https://github.com/TonyWu20/castep-periodic-table"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 license = "MIT"
 keywords = ["chemistry", "CASTEP"]
@@ -11,5 +11,5 @@ keywords = ["chemistry", "CASTEP"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-serde_yaml = "0.8.*"
+serde_yaml = "0.9.21"
 serde = { version = "1.*", features = ["derive"] }
