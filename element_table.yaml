@@ -1,283 +1,714 @@
 Element_info:
-  - symbol: C
-    atomic_number: 6
-    LCAO: 2
-    mass: 12.0109996796
-    potential: C_00PBE.usp
-    spin: 0
   - symbol: H
     atomic_number: 0
     LCAO: 1
     mass: 1.0080000162
     potential: H_00PBE.usp
     spin: 0
+    covalent_radius: 0.32
+  - symbol: He
+    atomic_number: 2
+    LCAO: 1
+    mass: 4.0029997826
+    potential: He_00.usp
+    spin: 0
+    covalent_radius: 0.46
+  - symbol: Li
+    atomic_number: 3
+    LCAO: 2
+    mass: 6.9400000572
+    potential: Li_00PBE.usp
+    spin: 0
+    covalent_radius: 1.33
+  - symbol: Be
+    atomic_number: 4
+    LCAO: 2
+    mass: 9.0120000839
+    potential: Be_00PBE.usp
+    spin: 0
+    covalent_radius: 1.02
+  - symbol: B
+    atomic_number: 5
+    LCAO: 2
+    mass: 10.8100004196
+    potential: B_00PBE.usp
+    spin: 0
+    covalent_radius: 0.85
+  - symbol: C
+    atomic_number: 6
+    LCAO: 2
+    mass: 12.0109996796
+    potential: C_00PBE.usp
+    spin: 0
+    covalent_radius: 0.75
+  - symbol: N
+    atomic_number: 7
+    LCAO: 2
+    mass: 14.0069999695
+    potential: N_00PBE.usp
+    spin: 0
+    covalent_radius: 0.71
   - symbol: O
     atomic_number: 8
     LCAO: 2
     mass: 15.9989995956
     potential: O_00PBE.usp
     spin: 0
-  - symbol: Co
-    atomic_number: 27
+    covalent_radius: 0.63
+  - symbol: F
+    atomic_number: 9
+    LCAO: 2
+    mass: 18.9979991913
+    potential: F_00PBE.usp
+    spin: 0
+    covalent_radius: 0.64
+  - symbol: Ne
+    atomic_number: 10
+    LCAO: 2
+    mass: 20.1790008545
+    potential: Ne_00.usp
+    spin: 0
+    covalent_radius: 0.67
+  - symbol: Na
+    atomic_number: 11
+    LCAO: 4
+    mass: 22.9899997711
+    potential: Na_00PBE.usp
+    spin: 0
+    covalent_radius: 1.55
+  - symbol: Mg
+    atomic_number: 12
     LCAO: 3
-    mass: 58.9329986572
-    potential: Co_00PBE.uspcc
-    spin: 3
-  - symbol: Cr
-    atomic_number: 24
-    LCAO: 5
-    mass: 51.9959983826
-    potential: Cr_00PBE.usp
-    spin: 3
-  - symbol: Cu
-    atomic_number: 29
-    LCAO: 3
-    mass: 63.5460014343
-    potential: Cu_00PBE.usp
-    spin: 1
-  - symbol: Fe
-    atomic_number: 26
-    LCAO: 3
-    mass: 55.8470001221
-    potential: Fe_00PBE.uspcc
-    spin: 4
-  - symbol: Mn
-    atomic_number: 25
-    LCAO: 3
-    mass: 54.9379997253
-    potential: Mn_00PBE.uspcc
-    spin: 5
-  - symbol: Ni
-    atomic_number: 28
-    LCAO: 3
-    mass: 58.7099990845
-    potential: Ni_00PBE.uspcc
-    spin: 2
+    mass: 24.3050003052
+    potential: Mg_00PW91.usp
+    spin: 0
+    covalent_radius: 1.39
+  - symbol: Al
+    atomic_number: 13
+    LCAO: 2
+    mass: 26.9820003510
+    potential: Al_00PBE.usp
+    spin: 0
+    covalent_radius: 1.26
+  - symbol: Si
+    atomic_number: 14
+    LCAO: 2
+    mass: 28.0849990845
+    potential: Si_00PBE.usp
+    spin: 0
+    covalent_radius: 1.16
+  - symbol: P
+    atomic_number: 15
+    LCAO: 2
+    mass: 30.9740009308
+    potential: P_00PBE.usp
+    spin: 0
+    covalent_radius: 1.11
+  - symbol: S
+    atomic_number: 16
+    LCAO: 2
+    mass: 32.0600013733
+    potential: S_00PBE.usp
+    spin: 0
+    covalent_radius: 1.03
+  - symbol: Cl
+    atomic_number: 17
+    LCAO: 2
+    mass: 35.4529991150
+    potential: Cl_00PBE.usp
+    spin: 0
+    covalent_radius: 0.99
+  - symbol: Ar
+    atomic_number: 18
+    LCAO: 2
+    mass: 39.9480018616
+    potential: Ar_00.usp
+    spin: 0
+    covalent_radius: 0.96
+  - symbol: K
+    atomic_number: 19
+    LCAO: 4
+    mass: 39.0979995728
+    potential: K_00PBE.usp
+    spin: 0
+    covalent_radius: 1.96
+  - symbol: Ca
+    atomic_number: 20
+    LCAO: 4
+    mass: 40.0800018311
+    potential: Ca_00PBE.usp
+    spin: 0
+    covalent_radius: 1.71
   - symbol: Sc
     atomic_number: 21
     LCAO: 5
     mass: 44.9560012817
     potential: Sc_00PBE.usp
     spin: 0
+    covalent_radius: 1.48
   - symbol: Ti
     atomic_number: 22
     LCAO: 5
     mass: 47.9000015259
     potential: Ti_00PBE.usp
     spin: 0
+    covalent_radius: 1.36
   - symbol: V
     atomic_number: 23
     LCAO: 5
     mass: 50.9410018921
     potential: V_00PBE.usp
     spin: 2
+    covalent_radius: 1.34
+  - symbol: Cr
+    atomic_number: 24
+    LCAO: 5
+    mass: 51.9959983826
+    potential: Cr_00PBE.usp
+    spin: 3
+    covalent_radius: 1.22
+  - symbol: Mn
+    atomic_number: 25
+    LCAO: 3
+    mass: 54.9379997253
+    potential: Mn_00PBE.uspcc
+    spin: 5
+    covalent_radius: 1.19
+  - symbol: Fe
+    atomic_number: 26
+    LCAO: 3
+    mass: 55.8470001221
+    potential: Fe_00PBE.uspcc
+    spin: 4
+    covalent_radius: 1.16
+  - symbol: Co
+    atomic_number: 27
+    LCAO: 3
+    mass: 58.9329986572
+    potential: Co_00PBE.uspcc
+    spin: 3
+    covalent_radius: 1.11
+  - symbol: Ni
+    atomic_number: 28
+    LCAO: 3
+    mass: 58.7099990845
+    potential: Ni_00PBE.uspcc
+    spin: 2
+    covalent_radius: 1.10
+  - symbol: Cu
+    atomic_number: 29
+    LCAO: 3
+    mass: 63.5460014343
+    potential: Cu_00PBE.usp
+    spin: 1
+    covalent_radius: 1.12
   - symbol: Zn
     atomic_number: 30
     LCAO: 4
     mass: 65.3799972534
     potential: Zn_00PBE.usp
     spin: 0
-  - symbol: Ag
-    atomic_number: 47
-    LCAO: 3
-    mass: 107.8679962158
-    potential: Ag_00PBE.usp
-    spin: 0
-  - symbol: Cd
-    atomic_number: 48
+    covalent_radius: 1.18
+  - symbol: Ga
+    atomic_number: 31
     LCAO: 4
-    mass: 112.4100036621
-    potential: Cd_00PBE.usp
+    mass: 69.7350006104
+    potential: Ga_00PBE.usp
     spin: 0
-  - symbol: Mo
-    atomic_number: 42
-    LCAO: 5
-    mass: 95.9400024414
-    potential: Mo_00PBE.usp
-    spin: 2
-  - symbol: Nb
-    atomic_number: 41
-    LCAO: 5
-    mass: 92.90599823
-    potential: Nb_00PBE.usp
-    spin: 1
-  - symbol: Pd
-    atomic_number: 46
+    covalent_radius: 1.24
+  - symbol: Ge
+    atomic_number: 32
     LCAO: 3
-    mass: 106.4000015259
-    potential: Pd_00PBE.usp
-    spin: 2
-  - symbol: Rh
-    atomic_number: 45
+    mass: 72.5899963379
+    potential: Ge_00PBE.usp
+    spin: 0
+    covalent_radius: 1.21
+  - symbol: As
+    atomic_number: 33
     LCAO: 3
-    mass: 102.90599823
-    potential: Rh_00PBE.usp
-    spin: 4
-  - symbol: Ru
-    atomic_number: 44
-    LCAO: 5
-    mass: 101.0699996948
-    potential: Ru_00PBE.usp
-    spin: 5
-  - symbol: Tc
-    atomic_number: 43
-    LCAO: 5
-    mass: 98.90599823
-    potential: Tc_00PBE.usp
-    spin: 3
+    mass: 74.9219970703
+    potential: As_00PBE.usp
+    spin: 0
+    covalent_radius: 1.21
+  - symbol: Se
+    atomic_number: 34
+    LCAO: 3
+    mass: 78.9599990845
+    potential: Se_00.usp
+    spin: 0
+    covalent_radius: 1.16
+  - symbol: Br
+    atomic_number: 35
+    LCAO: 3
+    mass: 79.9039993286
+    potential: Br_00PBE.usp
+    spin: 0
+    covalent_radius: 1.14
+  - symbol: Kr
+    atomic_number: 36
+    LCAO: 3
+    mass: 83.8000030518
+    potential: Kr_00.usp
+    spin: 0
+    covalent_radius: 1.17
+  - symbol: Rb
+    atomic_number: 37
+    LCAO: 4
+    mass: 85.4680023193
+    potential: Rb_00PBE.usp
+    spin: 0
+    covalent_radius: 2.1
+  - symbol: Sr
+    atomic_number: 38
+    LCAO: 4
+    mass: 87.6200027466
+    potential: Sr_00PBE.usp
+    spin: 0
+    covalent_radius: 1.85
   - symbol: Y
     atomic_number: 39
     LCAO: 3
     mass: 88.90599823
     potential: Y_00PBE.uspcc
     spin: 0
+    covalent_radius: 1.63
   - symbol: Zr
     atomic_number: 40
     LCAO: 5
     mass: 91.2200012207
     potential: Zr_00PBE.usp
     spin: 0
-  - symbol: Au
-    atomic_number: 79
-    LCAO: 3
-    mass: 196.966003418
-    potential: Au_00PBE.usp
+    covalent_radius: 1.54
+  - symbol: Nb
+    atomic_number: 41
+    LCAO: 5
+    mass: 92.90599823
+    potential: Nb_00PBE.usp
+    spin: 1
+    covalent_radius: 1.47
+  - symbol: Mo
+    atomic_number: 42
+    LCAO: 5
+    mass: 95.9400024414
+    potential: Mo_00PBE.usp
     spin: 2
-  - symbol: Hf
-    atomic_number: 72
+    covalent_radius: 1.38
+  - symbol: Tc
+    atomic_number: 43
+    LCAO: 5
+    mass: 98.90599823
+    potential: Tc_00PBE.usp
+    spin: 3
+    covalent_radius: 1.28
+  - symbol: Ru
+    atomic_number: 44
+    LCAO: 5
+    mass: 101.0699996948
+    potential: Ru_00PBE.usp
+    spin: 5
+    covalent_radius: 1.25
+  - symbol: Rh
+    atomic_number: 45
     LCAO: 3
-    mass: 178.4900054932
-    potential: Hf_00PBE.uspcc
+    mass: 102.90599823
+    potential: Rh_00PBE.usp
+    spin: 4
+    covalent_radius: 1.25
+  - symbol: Pd
+    atomic_number: 46
+    LCAO: 3
+    mass: 106.4000015259
+    potential: Pd_00PBE.usp
+    spin: 2
+    covalent_radius: 1.20
+  - symbol: Ag
+    atomic_number: 47
+    LCAO: 3
+    mass: 107.8679962158
+    potential: Ag_00PBE.usp
     spin: 0
-  - symbol: Hg
-    atomic_number: 80
+    covalent_radius: 1.28
+  - symbol: Cd
+    atomic_number: 48
     LCAO: 4
-    mass: 200.5899963379
-    potential: Hg_00PBE.usp
+    mass: 112.4100036621
+    potential: Cd_00PBE.usp
     spin: 0
-  - symbol: Ir
-    atomic_number: 77
+    covalent_radius: 1.36
+  - symbol: In
+    atomic_number: 49
+    LCAO: 4
+    mass: 114.8199996948
+    potential: In_00PBE.usp
+    spin: 0
+    covalent_radius: 1.42
+  - symbol: Sn
+    atomic_number: 50
     LCAO: 3
-    mass: 192.2200012207
-    potential: Ir_00PBE.usp
-    spin: 4
-  - symbol: Os
-    atomic_number: 76
-    LCAO: 5
-    mass: 190.1999969482
-    potential: Os_00PBE.usp
-    spin: 5
-  - symbol: Pt
-    atomic_number: 78
+    mass: 118.6900024414
+    potential: Sn_00PBE.usp
+    spin: 0
+    covalent_radius: 1.40
+  - symbol: Sb
+    atomic_number: 51
     LCAO: 3
-    mass: 195.0899963379
-    potential: Pt_00PBE.usp
-    spin: 4
-  - symbol: Re
-    atomic_number: 75
-    LCAO: 5
-    mass: 186.2070007324
-    potential: Re_00PBE.usp
-    spin: 3
-  - symbol: Ta
-    atomic_number: 73
+    mass: 121.7500000000
+    potential: Sb_00PBE.usp
+    spin: 0
+    covalent_radius: 1.40
+  - symbol: Te
+    atomic_number: 52
     LCAO: 3
-    mass: 180.9479980469
-    potential: Ta_00PBE.usp
-    spin: 1
-  - symbol: W
-    atomic_number: 74
-    LCAO: 5
-    mass: 183.8500061035
-    potential: W_00PBE.usp
-    spin: 2
-  - symbol: Ce
-    atomic_number: 58
-    LCAO: 6
-    mass: 140.1199951172
-    potential: Ce_00PBE.usp
-    spin: 1
-  - symbol: Dy
-    atomic_number: 66
-    LCAO: 6
-    mass: 162.5
-    potential: Dy_00.usp
-    spin: 5
-  - symbol: Er
-    atomic_number: 68
-    LCAO: 6
-    mass: 167.2599945068
-    potential: Er_00.usp
-    spin: 3
-  - symbol: Eu
-    atomic_number: 63
-    LCAO: 6
-    mass: 151.9600067139
-    potential: Eu_00.usp
-    spin: 6
-  - symbol: Gd
-    atomic_number: 64
-    LCAO: 6
-    mass: 157.25
-    potential: Gd_00.usp
-    spin: 7
-  - symbol: Ho
-    atomic_number: 67
-    LCAO: 6
-    mass: 164.9299926758
-    potential: Ho_00PBE.usp
-    spin: 4
+    mass: 127.5999984741
+    potential: Te_00PBE.usp
+    spin: 0
+    covalent_radius: 1.36
+  - symbol: I
+    atomic_number: 53
+    LCAO: 3
+    mass: 126.9039993286
+    potential: I_00PBE.usp
+    spin: 0
+    covalent_radius: 1.33
+  - symbol: Xe
+    atomic_number: 54
+    LCAO: 3
+    mass: 131.3000030518
+    potential: Xe_00.usp
+    spin: 0
+    covalent_radius: 1.31
+  - symbol: Cs
+    atomic_number: 55
+    LCAO: 4
+    mass: 132.9049987793
+    potential: Cs_00PBE.usp
+    spin: 0
+    covalent_radius: 2.32
+  - symbol: Ba
+    atomic_number: 56
+    LCAO: 4
+    mass: 137.3300018311
+    potential: Ba_00PBE.usp
+    spin: 0
+    covalent_radius: 1.96
   - symbol: La
     atomic_number: 57
     LCAO: 6
     mass: 138.9049987793
     potential: La_00PBE.usp
     spin: 0
-  - symbol: Lu
-    atomic_number: 71
-    LCAO: 4
-    mass: 174.9700012207
-    potential: Lu_00.usp
-    spin: 0
-  - symbol: Nd
-    atomic_number: 60
+    covalent_radius: 1.80
+  - symbol: Ce
+    atomic_number: 58
     LCAO: 6
-    mass: 144.2400054932
-    potential: Nd_00.usp
-    spin: 3
-  - symbol: Pm
-    atomic_number: 61
-    LCAO: 6
-    mass: 147.0
-    potential: Pm_00.usp
-    spin: 4
+    mass: 140.1199951172
+    potential: Ce_00PBE.usp
+    spin: 1
+    covalent_radius: 1.63
   - symbol: Pr
     atomic_number: 59
     LCAO: 6
     mass: 140.9080047607
     potential: Pr_00.usp
     spin: 2
+    covalent_radius: 1.76
+  - symbol: Nd
+    atomic_number: 60
+    LCAO: 6
+    mass: 144.2400054932
+    potential: Nd_00.usp
+    spin: 3
+    covalent_radius: 1.74
+  - symbol: Pm
+    atomic_number: 61
+    LCAO: 6
+    mass: 147.0
+    potential: Pm_00.usp
+    spin: 4
+    covalent_radius: 1.73
   - symbol: Sm
     atomic_number: 62
     LCAO: 6
     mass: 150.3999938965
     potential: Sm_00.usp
     spin: 5
+    covalent_radius: 1.72
+  - symbol: Eu
+    atomic_number: 63
+    LCAO: 6
+    mass: 151.9600067139
+    potential: Eu_00.usp
+    spin: 6
+    covalent_radius: 1.68
+  - symbol: Gd
+    atomic_number: 64
+    LCAO: 6
+    mass: 157.25
+    potential: Gd_00.usp
+    spin: 7
+    covalent_radius: 1.69
   - symbol: Tb
     atomic_number: 65
     LCAO: 6
     mass: 158.9250030518
     potential: Tb_00.usp
     spin: 6
+    covalent_radius: 1.68
+  - symbol: Dy
+    atomic_number: 66
+    LCAO: 6
+    mass: 162.5
+    potential: Dy_00.usp
+    spin: 5
+    covalent_radius: 1.67
+  - symbol: Ho
+    atomic_number: 67
+    LCAO: 6
+    mass: 164.9299926758
+    potential: Ho_00PBE.usp
+    spin: 4
+    covalent_radius: 1.66
+  - symbol: Er
+    atomic_number: 68
+    LCAO: 6
+    mass: 167.2599945068
+    potential: Er_00.usp
+    spin: 3
+    covalent_radius: 1.65
   - symbol: Tm
     atomic_number: 69
     LCAO: 6
     mass: 168.9340057373
     potential: Tm_00.usp
     spin: 2
+    covalent_radius: 1.64
   - symbol: Yb
     atomic_number: 70
     LCAO: 6
     mass: 173.0399932861
     potential: Yb_00PBE.usp
     spin: 1
+    covalent_radius: 1.70
+  - symbol: Lu
+    atomic_number: 71
+    LCAO: 4
+    mass: 174.9700012207
+    potential: Lu_00.usp
+    spin: 0
+    covalent_radius: 1.62
+  - symbol: Hf
+    atomic_number: 72
+    LCAO: 3
+    mass: 178.4900054932
+    potential: Hf_00PBE.uspcc
+    spin: 0
+    covalent_radius: 1.52
+  - symbol: Ta
+    atomic_number: 73
+    LCAO: 3
+    mass: 180.9479980469
+    potential: Ta_00PBE.usp
+    spin: 1
+    covalent_radius: 1.46
+  - symbol: W
+    atomic_number: 74
+    LCAO: 5
+    mass: 183.8500061035
+    potential: W_00PBE.usp
+    spin: 2
+    covalent_radius: 1.37
+  - symbol: Re
+    atomic_number: 75
+    LCAO: 5
+    mass: 186.2070007324
+    potential: Re_00PBE.usp
+    spin: 3
+    covalent_radius: 1.31
+  - symbol: Os
+    atomic_number: 76
+    LCAO: 5
+    mass: 190.1999969482
+    potential: Os_00PBE.usp
+    spin: 5
+    covalent_radius: 1.29
+  - symbol: Ir
+    atomic_number: 77
+    LCAO: 3
+    mass: 192.2200012207
+    potential: Ir_00PBE.usp
+    spin: 4
+    covalent_radius: 1.22
+  - symbol: Pt
+    atomic_number: 78
+    LCAO: 3
+    mass: 195.0899963379
+    potential: Pt_00PBE.usp
+    spin: 4
+    covalent_radius: 1.23
+  - symbol: Au
+    atomic_number: 79
+    LCAO: 3
+    mass: 196.966003418
+    potential: Au_00PBE.usp
+    spin: 2
+    covalent_radius: 1.24
+  - symbol: Hg
+    atomic_number: 80
+    LCAO: 4
+    mass: 200.5899963379
+    potential: Hg_00PBE.usp
+    spin: 0
+    covalent_radius: 1.33
+  - symbol: Tl
+    atomic_number: 81
+    LCAO: 4
+    mass: 204.3699951172
+    potential: Tl_00PBE.usp
+    spin: 0
+    covalent_radius: 1.44
+  - symbol: Pb
+    atomic_number: 82
+    LCAO: 4
+    mass: 207.1999969482
+    potential: Pb_00PBE.usp
+    spin: 0
+    covalent_radius: 1.44
+  - symbol: Bi
+    atomic_number: 83
+    LCAO: 3
+    mass: 208.9799957275
+    potential: Bi_00PBE.usp
+    spin: 0
+    covalent_radius: 1.51
+  - symbol: Po
+    atomic_number: 84
+    LCAO: 3
+    mass: 209.0000000000
+    potential: Po_00.usp
+    spin: 0
+    covalent_radius: 1.45
+  - symbol: At
+    atomic_number: 85
+    LCAO: 3
+    mass: 210.0000000000
+    potential: At_00.usp
+    spin: 0
+    covalent_radius: 1.47
+  - symbol: Rn
+    atomic_number: 86
+    LCAO: 3
+    mass: 222.0000000000
+    potential: Rn_00.usp
+    spin: 0
+    covalent_radius: 1.42
+  - symbol: Fr
+    atomic_number: 87
+    LCAO: 4
+    mass: 223.0000000000
+    potential: Fr_00.usp
+    spin: 0
+  - symbol: Ra
+    atomic_number: 88
+    LCAO: 4
+    mass: 226.0000000000
+    potential: Ra_00.usp
+    spin: 0
+    covalent_radius: 2.01
+  - symbol: Ac
+    atomic_number: 89
+    LCAO: 4
+    mass: 227.0000000000
+    potential: Ac_00.recpot
+    spin: 0
+    covalent_radius: 1.86
+  - symbol: Th
+    atomic_number: 90
+    LCAO: 6
+    mass: 232.0379943848
+    potential: Th_00.usp
+    spin: 1
+    covalent_radius: 1.75
+  - symbol: Pa
+    atomic_number: 91
+    LCAO: 6
+    mass: 231.0000000000
+    potential: Pa_00.usp
+    spin: 2
+    covalent_radius: 1.69
+  - symbol: U
+    atomic_number: 92
+    LCAO: 6
+    mass: 238.0290069580
+    potential: U_00PBE.usp
+    spin: 3
+    covalent_radius: 1.70
+  - symbol: Np
+    atomic_number: 93
+    LCAO: 6
+    mass: 237.0000000000
+    potential: Np_00.usp
+    spin: 4
+    covalent_radius: 1.71
+  - symbol: Pu
+    atomic_number: 94
+    LCAO: 6
+    mass: 244.0000000000
+    potential: Pu_00PBE.usp
+    spin: 5
+    covalent_radius: 1.72
+  - symbol: Am
+    atomic_number: 95
+    LCAO: 6
+    mass: 243.0000000000
+    potential: Am_00.usp
+    spin: 6
+    covalent_radius: 1.66
+  - symbol: Cm
+    atomic_number: 96
+    LCAO: 6
+    mass: 247.0000000000
+    potential: Cm_00PBE.usp
+    spin: 7
+    covalent_radius: 1.66
+  - symbol: Bk
+    atomic_number: 97
+    LCAO: 6
+    mass: 247.0000000000
+    potential: Bk_00.usp
+    spin: 6
+  - symbol: Cf
+    atomic_number: 98
+    LCAO: 6
+    mass: 251.0000000000
+    potential: Cf_00.usp
+    spin: 5
+  - symbol: Es
+    atomic_number: 99
+    LCAO: 6
+    mass: 252.0000000000
+    potential: Es_00.usp
+    spin: 4
+  - symbol: Fm
+    atomic_number: 100
+    LCAO: 6
+    mass: 257.0000000000
+    potential: Fm_00.usp
+    spin: 3
+  - symbol: Md
+    atomic_number: 101
+    LCAO: 6
+    mass: 258.0000000000
+    potential: Md_00.usp
+    spin: 2
+  - symbol: No
+    atomic_number: 102
+    LCAO: 6
+    mass: 259.0000000000
+    potential: No_00.usp
+    spin: 1
+  - symbol: Lr
+    atomic_number: 103
+    LCAO: 5
+    mass: 262.0000000000
+    potential: Lr_00.usp
+    spin: 0
