@@ -10,6 +10,7 @@ pub struct ElementYAML {
     pub mass: f64,
     pub potential: String,
     pub spin: u8,
+    pub covalent_radius: Option<f64>,
 }
 
 impl Eq for ElementYAML {}
@@ -40,6 +41,7 @@ pub struct Element {
     pub mass: f64,
     pub potential: &'static str,
     pub spin: u8,
+    pub covalent_radius: Option<f64>,
 }
 
 impl Element {
@@ -65,6 +67,10 @@ impl Element {
 
     pub fn spin(&self) -> u8 {
         self.spin
+    }
+
+    pub fn covalent_radius(&self) -> Option<f64> {
+        self.covalent_radius
     }
 }
 impl Eq for Element {}
@@ -120,14 +126,14 @@ impl ElementYamlTable {
     /// - array_content: '&str' - A string that joined by ", " from `Vec<String>`
     /// ```
     pub fn new_const_array(var_name: &str, var_type: &str, array_content: &str) -> String {
-        format!("const {var_name}: {var_type} = [{array_content}];")
+        format!("pub const {var_name}: {var_type} = [{array_content}];")
     }
     pub fn export_struct(&self) -> String {
         let init_element = |elm: &ElementYAML| -> String {
-            format!("Element{{ symbol: \"{}\", atomic_number: {}_u8, lcao: {}_u8, mass: {:?}, potential: \"{}\", spin:{}_u8}}\n", &elm.symbol, elm.atomic_number, elm.lcao, elm.mass, &elm.potential, elm.spin)
+            format!("Element{{ symbol: \"{}\", atomic_number: {}_u8, lcao: {}_u8, mass: {:?}, potential: \"{}\", spin:{}_u8, covalent_radius: {}\n}}", &elm.symbol, elm.atomic_number, elm.lcao, elm.mass, &elm.potential, elm.spin, if let Some(r) = elm.covalent_radius {format!("Some({})", r)} else {"None".into()})
             // Debug formatter is used for mass to avoid making f64 numbers like `147.0` to `147`
         };
-        let var_name = "ELEMENTS";
+        let var_name = "ELEMENT_TABLE";
         let var_type = self.new_array_type("Element");
         let array_content = self.new_array_content(init_element);
         Self::new_const_array(var_name, &var_type, &array_content)
