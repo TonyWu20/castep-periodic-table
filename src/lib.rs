@@ -36,5 +36,6 @@ mod test {
         let element_pm = ELEMENT_TABLE.get_by_symbol("Pm").unwrap();
         println!("Mass: {:?}", element_pm.mass());
         println!("Mass: {:?}", element_co.mass());
+        println!("Covalent_radius : {:?}", element_co.covalent_radius());
     }
 }
