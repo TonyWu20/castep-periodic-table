@@ -1,4 +1,8 @@
+use std::{fmt::Display, str::FromStr};
+
 use serde::{Deserialize, Serialize};
+
+use crate::data::ELEMENT_TABLE;
 
 extern crate serde;
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -90,6 +94,26 @@ impl Ord for Element {
 impl PartialOrd for Element {
     fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
         Some(self.cmp(other))
+    }
+}
+
+#[derive(Debug, PartialEq, PartialOrd)]
+pub struct ParseElementErr;
+
+impl Display for ParseElementErr {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "Invalid element symbol!")
+    }
+}
+
+impl FromStr for Element {
+    type Err = ParseElementErr;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        ELEMENT_TABLE
+            .get_by_symbol(s)
+            .cloned()
+            .ok_or(ParseElementErr)
     }
 }
 
