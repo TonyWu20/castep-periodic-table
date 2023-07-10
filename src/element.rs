@@ -119,7 +119,7 @@ impl FromStr for Element {
 
 impl Display for Element {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{}", self.symbol())
+        write!(f, "{} {}", self.atomic_number(), self.symbol())
     }
 }
 
