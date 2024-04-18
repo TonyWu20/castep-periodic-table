@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-#[derive(Eq, PartialEq, PartialOrd, Ord, Debug, Serialize, Deserialize, Clone)]
+#[derive(Eq, PartialEq, PartialOrd, Ord, Debug, Serialize, Deserialize, Clone, Copy)]
 pub enum ElementSymbol {
     H,
     He,
