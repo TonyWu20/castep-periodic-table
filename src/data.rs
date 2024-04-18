@@ -1,7 +1,9 @@
 use crate::element::Element;
+use crate::element::ElementSymbol;
+
 pub const ELEMENT_TABLE: [Element; 103] = [
     Element {
-        symbol: "H",
+        symbol: ElementSymbol::H,
         atomic_number: 0_u8,
         lcao: 1_u8,
         mass: 1.0080000162,
@@ -10,7 +12,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.32),
     },
     Element {
-        symbol: "He",
+        symbol: ElementSymbol::He,
         atomic_number: 2_u8,
         lcao: 1_u8,
         mass: 4.0029997826,
@@ -19,7 +21,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.46),
     },
     Element {
-        symbol: "Li",
+        symbol: ElementSymbol::Li,
         atomic_number: 3_u8,
         lcao: 2_u8,
         mass: 6.9400000572,
@@ -28,7 +30,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.33),
     },
     Element {
-        symbol: "Be",
+        symbol: ElementSymbol::Be,
         atomic_number: 4_u8,
         lcao: 2_u8,
         mass: 9.0120000839,
@@ -37,7 +39,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.02),
     },
     Element {
-        symbol: "B",
+        symbol: ElementSymbol::B,
         atomic_number: 5_u8,
         lcao: 2_u8,
         mass: 10.8100004196,
@@ -46,7 +48,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.85),
     },
     Element {
-        symbol: "C",
+        symbol: ElementSymbol::C,
         atomic_number: 6_u8,
         lcao: 2_u8,
         mass: 12.0109996796,
@@ -55,7 +57,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.75),
     },
     Element {
-        symbol: "N",
+        symbol: ElementSymbol::N,
         atomic_number: 7_u8,
         lcao: 2_u8,
         mass: 14.0069999695,
@@ -64,7 +66,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.71),
     },
     Element {
-        symbol: "O",
+        symbol: ElementSymbol::O,
         atomic_number: 8_u8,
         lcao: 2_u8,
         mass: 15.9989995956,
@@ -73,7 +75,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.63),
     },
     Element {
-        symbol: "F",
+        symbol: ElementSymbol::F,
         atomic_number: 9_u8,
         lcao: 2_u8,
         mass: 18.9979991913,
@@ -82,7 +84,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.64),
     },
     Element {
-        symbol: "Ne",
+        symbol: ElementSymbol::Ne,
         atomic_number: 10_u8,
         lcao: 2_u8,
         mass: 20.1790008545,
@@ -91,7 +93,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.67),
     },
     Element {
-        symbol: "Na",
+        symbol: ElementSymbol::Na,
         atomic_number: 11_u8,
         lcao: 4_u8,
         mass: 22.9899997711,
@@ -100,7 +102,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.55),
     },
     Element {
-        symbol: "Mg",
+        symbol: ElementSymbol::Mg,
         atomic_number: 12_u8,
         lcao: 3_u8,
         mass: 24.3050003052,
@@ -109,7 +111,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.39),
     },
     Element {
-        symbol: "Al",
+        symbol: ElementSymbol::Al,
         atomic_number: 13_u8,
         lcao: 2_u8,
         mass: 26.982000351,
@@ -118,7 +120,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.26),
     },
     Element {
-        symbol: "Si",
+        symbol: ElementSymbol::Si,
         atomic_number: 14_u8,
         lcao: 2_u8,
         mass: 28.0849990845,
@@ -127,7 +129,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.16),
     },
     Element {
-        symbol: "P",
+        symbol: ElementSymbol::P,
         atomic_number: 15_u8,
         lcao: 2_u8,
         mass: 30.9740009308,
@@ -136,7 +138,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.11),
     },
     Element {
-        symbol: "S",
+        symbol: ElementSymbol::S,
         atomic_number: 16_u8,
         lcao: 2_u8,
         mass: 32.0600013733,
@@ -145,7 +147,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.03),
     },
     Element {
-        symbol: "Cl",
+        symbol: ElementSymbol::Cl,
         atomic_number: 17_u8,
         lcao: 2_u8,
         mass: 35.452999115,
@@ -154,7 +156,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.99),
     },
     Element {
-        symbol: "Ar",
+        symbol: ElementSymbol::Ar,
         atomic_number: 18_u8,
         lcao: 2_u8,
         mass: 39.9480018616,
@@ -163,7 +165,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(0.96),
     },
     Element {
-        symbol: "K",
+        symbol: ElementSymbol::K,
         atomic_number: 19_u8,
         lcao: 4_u8,
         mass: 39.0979995728,
@@ -172,7 +174,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.96),
     },
     Element {
-        symbol: "Ca",
+        symbol: ElementSymbol::Ca,
         atomic_number: 20_u8,
         lcao: 4_u8,
         mass: 40.0800018311,
@@ -181,7 +183,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.71),
     },
     Element {
-        symbol: "Sc",
+        symbol: ElementSymbol::Sc,
         atomic_number: 21_u8,
         lcao: 5_u8,
         mass: 44.9560012817,
@@ -190,7 +192,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.48),
     },
     Element {
-        symbol: "Ti",
+        symbol: ElementSymbol::Ti,
         atomic_number: 22_u8,
         lcao: 5_u8,
         mass: 47.9000015259,
@@ -199,7 +201,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.36),
     },
     Element {
-        symbol: "V",
+        symbol: ElementSymbol::V,
         atomic_number: 23_u8,
         lcao: 5_u8,
         mass: 50.9410018921,
@@ -208,7 +210,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.34),
     },
     Element {
-        symbol: "Cr",
+        symbol: ElementSymbol::Cr,
         atomic_number: 24_u8,
         lcao: 5_u8,
         mass: 51.9959983826,
@@ -217,7 +219,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.22),
     },
     Element {
-        symbol: "Mn",
+        symbol: ElementSymbol::Mn,
         atomic_number: 25_u8,
         lcao: 3_u8,
         mass: 54.9379997253,
@@ -226,7 +228,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.19),
     },
     Element {
-        symbol: "Fe",
+        symbol: ElementSymbol::Fe,
         atomic_number: 26_u8,
         lcao: 3_u8,
         mass: 55.8470001221,
@@ -235,7 +237,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.16),
     },
     Element {
-        symbol: "Co",
+        symbol: ElementSymbol::Co,
         atomic_number: 27_u8,
         lcao: 3_u8,
         mass: 58.9329986572,
@@ -244,7 +246,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.11),
     },
     Element {
-        symbol: "Ni",
+        symbol: ElementSymbol::Ni,
         atomic_number: 28_u8,
         lcao: 3_u8,
         mass: 58.7099990845,
@@ -253,7 +255,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.1),
     },
     Element {
-        symbol: "Cu",
+        symbol: ElementSymbol::Cu,
         atomic_number: 29_u8,
         lcao: 3_u8,
         mass: 63.5460014343,
@@ -262,7 +264,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.12),
     },
     Element {
-        symbol: "Zn",
+        symbol: ElementSymbol::Zn,
         atomic_number: 30_u8,
         lcao: 4_u8,
         mass: 65.3799972534,
@@ -271,7 +273,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.18),
     },
     Element {
-        symbol: "Ga",
+        symbol: ElementSymbol::Ga,
         atomic_number: 31_u8,
         lcao: 4_u8,
         mass: 69.7350006104,
@@ -280,7 +282,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.24),
     },
     Element {
-        symbol: "Ge",
+        symbol: ElementSymbol::Ge,
         atomic_number: 32_u8,
         lcao: 3_u8,
         mass: 72.5899963379,
@@ -289,7 +291,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.21),
     },
     Element {
-        symbol: "As",
+        symbol: ElementSymbol::As,
         atomic_number: 33_u8,
         lcao: 3_u8,
         mass: 74.9219970703,
@@ -298,7 +300,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.21),
     },
     Element {
-        symbol: "Se",
+        symbol: ElementSymbol::Se,
         atomic_number: 34_u8,
         lcao: 3_u8,
         mass: 78.9599990845,
@@ -307,7 +309,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.16),
     },
     Element {
-        symbol: "Br",
+        symbol: ElementSymbol::Br,
         atomic_number: 35_u8,
         lcao: 3_u8,
         mass: 79.9039993286,
@@ -316,7 +318,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.14),
     },
     Element {
-        symbol: "Kr",
+        symbol: ElementSymbol::Kr,
         atomic_number: 36_u8,
         lcao: 3_u8,
         mass: 83.8000030518,
@@ -325,7 +327,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.17),
     },
     Element {
-        symbol: "Rb",
+        symbol: ElementSymbol::Rb,
         atomic_number: 37_u8,
         lcao: 4_u8,
         mass: 85.4680023193,
@@ -334,7 +336,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(2.1),
     },
     Element {
-        symbol: "Sr",
+        symbol: ElementSymbol::Sr,
         atomic_number: 38_u8,
         lcao: 4_u8,
         mass: 87.6200027466,
@@ -343,7 +345,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.85),
     },
     Element {
-        symbol: "Y",
+        symbol: ElementSymbol::Y,
         atomic_number: 39_u8,
         lcao: 3_u8,
         mass: 88.90599823,
@@ -352,7 +354,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.63),
     },
     Element {
-        symbol: "Zr",
+        symbol: ElementSymbol::Zr,
         atomic_number: 40_u8,
         lcao: 5_u8,
         mass: 91.2200012207,
@@ -361,7 +363,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.54),
     },
     Element {
-        symbol: "Nb",
+        symbol: ElementSymbol::Nb,
         atomic_number: 41_u8,
         lcao: 5_u8,
         mass: 92.90599823,
@@ -370,7 +372,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.47),
     },
     Element {
-        symbol: "Mo",
+        symbol: ElementSymbol::Mo,
         atomic_number: 42_u8,
         lcao: 5_u8,
         mass: 95.9400024414,
@@ -379,7 +381,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.38),
     },
     Element {
-        symbol: "Tc",
+        symbol: ElementSymbol::Tc,
         atomic_number: 43_u8,
         lcao: 5_u8,
         mass: 98.90599823,
@@ -388,7 +390,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.28),
     },
     Element {
-        symbol: "Ru",
+        symbol: ElementSymbol::Ru,
         atomic_number: 44_u8,
         lcao: 5_u8,
         mass: 101.0699996948,
@@ -397,7 +399,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.25),
     },
     Element {
-        symbol: "Rh",
+        symbol: ElementSymbol::Rh,
         atomic_number: 45_u8,
         lcao: 3_u8,
         mass: 102.90599823,
@@ -406,7 +408,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.25),
     },
     Element {
-        symbol: "Pd",
+        symbol: ElementSymbol::Pd,
         atomic_number: 46_u8,
         lcao: 3_u8,
         mass: 106.4000015259,
@@ -415,7 +417,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.2),
     },
     Element {
-        symbol: "Ag",
+        symbol: ElementSymbol::Ag,
         atomic_number: 47_u8,
         lcao: 3_u8,
         mass: 107.8679962158,
@@ -424,7 +426,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.28),
     },
     Element {
-        symbol: "Cd",
+        symbol: ElementSymbol::Cd,
         atomic_number: 48_u8,
         lcao: 4_u8,
         mass: 112.4100036621,
@@ -433,7 +435,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.36),
     },
     Element {
-        symbol: "In",
+        symbol: ElementSymbol::In,
         atomic_number: 49_u8,
         lcao: 4_u8,
         mass: 114.8199996948,
@@ -442,7 +444,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.42),
     },
     Element {
-        symbol: "Sn",
+        symbol: ElementSymbol::Sn,
         atomic_number: 50_u8,
         lcao: 3_u8,
         mass: 118.6900024414,
@@ -451,7 +453,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.4),
     },
     Element {
-        symbol: "Sb",
+        symbol: ElementSymbol::Sb,
         atomic_number: 51_u8,
         lcao: 3_u8,
         mass: 121.75,
@@ -460,7 +462,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.4),
     },
     Element {
-        symbol: "Te",
+        symbol: ElementSymbol::Te,
         atomic_number: 52_u8,
         lcao: 3_u8,
         mass: 127.5999984741,
@@ -469,7 +471,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.36),
     },
     Element {
-        symbol: "I",
+        symbol: ElementSymbol::I,
         atomic_number: 53_u8,
         lcao: 3_u8,
         mass: 126.9039993286,
@@ -478,7 +480,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.33),
     },
     Element {
-        symbol: "Xe",
+        symbol: ElementSymbol::Xe,
         atomic_number: 54_u8,
         lcao: 3_u8,
         mass: 131.3000030518,
@@ -487,7 +489,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.31),
     },
     Element {
-        symbol: "Cs",
+        symbol: ElementSymbol::Cs,
         atomic_number: 55_u8,
         lcao: 4_u8,
         mass: 132.9049987793,
@@ -496,7 +498,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(2.32),
     },
     Element {
-        symbol: "Ba",
+        symbol: ElementSymbol::Ba,
         atomic_number: 56_u8,
         lcao: 4_u8,
         mass: 137.3300018311,
@@ -505,7 +507,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.96),
     },
     Element {
-        symbol: "La",
+        symbol: ElementSymbol::La,
         atomic_number: 57_u8,
         lcao: 6_u8,
         mass: 138.9049987793,
@@ -514,7 +516,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.8),
     },
     Element {
-        symbol: "Ce",
+        symbol: ElementSymbol::Ce,
         atomic_number: 58_u8,
         lcao: 6_u8,
         mass: 140.1199951172,
@@ -523,7 +525,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.63),
     },
     Element {
-        symbol: "Pr",
+        symbol: ElementSymbol::Pr,
         atomic_number: 59_u8,
         lcao: 6_u8,
         mass: 140.9080047607,
@@ -532,7 +534,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.76),
     },
     Element {
-        symbol: "Nd",
+        symbol: ElementSymbol::Nd,
         atomic_number: 60_u8,
         lcao: 6_u8,
         mass: 144.2400054932,
@@ -541,7 +543,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.74),
     },
     Element {
-        symbol: "Pm",
+        symbol: ElementSymbol::Pm,
         atomic_number: 61_u8,
         lcao: 6_u8,
         mass: 147.0,
@@ -550,7 +552,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.73),
     },
     Element {
-        symbol: "Sm",
+        symbol: ElementSymbol::Sm,
         atomic_number: 62_u8,
         lcao: 6_u8,
         mass: 150.3999938965,
@@ -559,7 +561,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.72),
     },
     Element {
-        symbol: "Eu",
+        symbol: ElementSymbol::Eu,
         atomic_number: 63_u8,
         lcao: 6_u8,
         mass: 151.9600067139,
@@ -568,7 +570,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.68),
     },
     Element {
-        symbol: "Gd",
+        symbol: ElementSymbol::Gd,
         atomic_number: 64_u8,
         lcao: 6_u8,
         mass: 157.25,
@@ -577,7 +579,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.69),
     },
     Element {
-        symbol: "Tb",
+        symbol: ElementSymbol::Tb,
         atomic_number: 65_u8,
         lcao: 6_u8,
         mass: 158.9250030518,
@@ -586,7 +588,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.68),
     },
     Element {
-        symbol: "Dy",
+        symbol: ElementSymbol::Dy,
         atomic_number: 66_u8,
         lcao: 6_u8,
         mass: 162.5,
@@ -595,7 +597,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.67),
     },
     Element {
-        symbol: "Ho",
+        symbol: ElementSymbol::Ho,
         atomic_number: 67_u8,
         lcao: 6_u8,
         mass: 164.9299926758,
@@ -604,7 +606,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.66),
     },
     Element {
-        symbol: "Er",
+        symbol: ElementSymbol::Er,
         atomic_number: 68_u8,
         lcao: 6_u8,
         mass: 167.2599945068,
@@ -613,7 +615,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.65),
     },
     Element {
-        symbol: "Tm",
+        symbol: ElementSymbol::Tm,
         atomic_number: 69_u8,
         lcao: 6_u8,
         mass: 168.9340057373,
@@ -622,7 +624,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.64),
     },
     Element {
-        symbol: "Yb",
+        symbol: ElementSymbol::Yb,
         atomic_number: 70_u8,
         lcao: 6_u8,
         mass: 173.0399932861,
@@ -631,7 +633,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.7),
     },
     Element {
-        symbol: "Lu",
+        symbol: ElementSymbol::Lu,
         atomic_number: 71_u8,
         lcao: 4_u8,
         mass: 174.9700012207,
@@ -640,7 +642,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.62),
     },
     Element {
-        symbol: "Hf",
+        symbol: ElementSymbol::Hf,
         atomic_number: 72_u8,
         lcao: 3_u8,
         mass: 178.4900054932,
@@ -649,7 +651,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.52),
     },
     Element {
-        symbol: "Ta",
+        symbol: ElementSymbol::Ta,
         atomic_number: 73_u8,
         lcao: 3_u8,
         mass: 180.9479980469,
@@ -658,7 +660,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.46),
     },
     Element {
-        symbol: "W",
+        symbol: ElementSymbol::W,
         atomic_number: 74_u8,
         lcao: 5_u8,
         mass: 183.8500061035,
@@ -667,7 +669,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.37),
     },
     Element {
-        symbol: "Re",
+        symbol: ElementSymbol::Re,
         atomic_number: 75_u8,
         lcao: 5_u8,
         mass: 186.2070007324,
@@ -676,7 +678,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.31),
     },
     Element {
-        symbol: "Os",
+        symbol: ElementSymbol::Os,
         atomic_number: 76_u8,
         lcao: 5_u8,
         mass: 190.1999969482,
@@ -685,7 +687,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.29),
     },
     Element {
-        symbol: "Ir",
+        symbol: ElementSymbol::Ir,
         atomic_number: 77_u8,
         lcao: 3_u8,
         mass: 192.2200012207,
@@ -694,7 +696,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.22),
     },
     Element {
-        symbol: "Pt",
+        symbol: ElementSymbol::Pt,
         atomic_number: 78_u8,
         lcao: 3_u8,
         mass: 195.0899963379,
@@ -703,7 +705,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.23),
     },
     Element {
-        symbol: "Au",
+        symbol: ElementSymbol::Au,
         atomic_number: 79_u8,
         lcao: 3_u8,
         mass: 196.966003418,
@@ -712,7 +714,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.24),
     },
     Element {
-        symbol: "Hg",
+        symbol: ElementSymbol::Hg,
         atomic_number: 80_u8,
         lcao: 4_u8,
         mass: 200.5899963379,
@@ -721,7 +723,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.33),
     },
     Element {
-        symbol: "Tl",
+        symbol: ElementSymbol::Tl,
         atomic_number: 81_u8,
         lcao: 4_u8,
         mass: 204.3699951172,
@@ -730,7 +732,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.44),
     },
     Element {
-        symbol: "Pb",
+        symbol: ElementSymbol::Pb,
         atomic_number: 82_u8,
         lcao: 4_u8,
         mass: 207.1999969482,
@@ -739,7 +741,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.44),
     },
     Element {
-        symbol: "Bi",
+        symbol: ElementSymbol::Bi,
         atomic_number: 83_u8,
         lcao: 3_u8,
         mass: 208.9799957275,
@@ -748,7 +750,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.51),
     },
     Element {
-        symbol: "Po",
+        symbol: ElementSymbol::Po,
         atomic_number: 84_u8,
         lcao: 3_u8,
         mass: 209.0,
@@ -757,7 +759,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.45),
     },
     Element {
-        symbol: "At",
+        symbol: ElementSymbol::At,
         atomic_number: 85_u8,
         lcao: 3_u8,
         mass: 210.0,
@@ -766,7 +768,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.47),
     },
     Element {
-        symbol: "Rn",
+        symbol: ElementSymbol::Rn,
         atomic_number: 86_u8,
         lcao: 3_u8,
         mass: 222.0,
@@ -775,7 +777,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.42),
     },
     Element {
-        symbol: "Fr",
+        symbol: ElementSymbol::Fr,
         atomic_number: 87_u8,
         lcao: 4_u8,
         mass: 223.0,
@@ -784,7 +786,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: None,
     },
     Element {
-        symbol: "Ra",
+        symbol: ElementSymbol::Ra,
         atomic_number: 88_u8,
         lcao: 4_u8,
         mass: 226.0,
@@ -793,7 +795,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(2.01),
     },
     Element {
-        symbol: "Ac",
+        symbol: ElementSymbol::Ac,
         atomic_number: 89_u8,
         lcao: 4_u8,
         mass: 227.0,
@@ -802,7 +804,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.86),
     },
     Element {
-        symbol: "Th",
+        symbol: ElementSymbol::Th,
         atomic_number: 90_u8,
         lcao: 6_u8,
         mass: 232.0379943848,
@@ -811,7 +813,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.75),
     },
     Element {
-        symbol: "Pa",
+        symbol: ElementSymbol::Pa,
         atomic_number: 91_u8,
         lcao: 6_u8,
         mass: 231.0,
@@ -820,7 +822,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.69),
     },
     Element {
-        symbol: "U",
+        symbol: ElementSymbol::U,
         atomic_number: 92_u8,
         lcao: 6_u8,
         mass: 238.029006958,
@@ -829,7 +831,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.7),
     },
     Element {
-        symbol: "Np",
+        symbol: ElementSymbol::Np,
         atomic_number: 93_u8,
         lcao: 6_u8,
         mass: 237.0,
@@ -838,7 +840,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.71),
     },
     Element {
-        symbol: "Pu",
+        symbol: ElementSymbol::Pu,
         atomic_number: 94_u8,
         lcao: 6_u8,
         mass: 244.0,
@@ -847,7 +849,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.72),
     },
     Element {
-        symbol: "Am",
+        symbol: ElementSymbol::Am,
         atomic_number: 95_u8,
         lcao: 6_u8,
         mass: 243.0,
@@ -856,7 +858,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.66),
     },
     Element {
-        symbol: "Cm",
+        symbol: ElementSymbol::Cm,
         atomic_number: 96_u8,
         lcao: 6_u8,
         mass: 247.0,
@@ -865,7 +867,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: Some(1.66),
     },
     Element {
-        symbol: "Bk",
+        symbol: ElementSymbol::Bk,
         atomic_number: 97_u8,
         lcao: 6_u8,
         mass: 247.0,
@@ -874,7 +876,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: None,
     },
     Element {
-        symbol: "Cf",
+        symbol: ElementSymbol::Cf,
         atomic_number: 98_u8,
         lcao: 6_u8,
         mass: 251.0,
@@ -883,7 +885,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: None,
     },
     Element {
-        symbol: "Es",
+        symbol: ElementSymbol::Es,
         atomic_number: 99_u8,
         lcao: 6_u8,
         mass: 252.0,
@@ -892,7 +894,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: None,
     },
     Element {
-        symbol: "Fm",
+        symbol: ElementSymbol::Fm,
         atomic_number: 100_u8,
         lcao: 6_u8,
         mass: 257.0,
@@ -901,7 +903,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: None,
     },
     Element {
-        symbol: "Md",
+        symbol: ElementSymbol::Md,
         atomic_number: 101_u8,
         lcao: 6_u8,
         mass: 258.0,
@@ -910,7 +912,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: None,
     },
     Element {
-        symbol: "No",
+        symbol: ElementSymbol::No,
         atomic_number: 102_u8,
         lcao: 6_u8,
         mass: 259.0,
@@ -919,7 +921,7 @@ pub const ELEMENT_TABLE: [Element; 103] = [
         covalent_radius: None,
     },
     Element {
-        symbol: "Lr",
+        symbol: ElementSymbol::Lr,
         atomic_number: 103_u8,
         lcao: 5_u8,
         mass: 262.0,
