@@ -1,9 +1,12 @@
-use serde::{Deserialize, Serialize};
+use serde::Serialize;
 
-#[derive(Eq, PartialEq, PartialOrd, Ord, Debug, Serialize, Deserialize, Clone, Copy)]
+mod de;
+mod error;
+
+#[derive(Eq, PartialEq, PartialOrd, Ord, Debug, Serialize, Clone, Copy)]
 pub enum ElementSymbol {
     H,
-    He,
+    He = 2,
     Li,
     Be,
     B,
@@ -111,5 +114,25 @@ impl PartialEq<&str> for ElementSymbol {
     fn eq(&self, other: &&str) -> bool {
         let symbol_debug = format!("{:?}", self);
         symbol_debug.as_str() == *other
+    }
+}
+
+#[cfg(test)]
+mod test {
+
+    use std::str::FromStr;
+
+    use super::ElementSymbol;
+
+    #[test]
+    fn test_serde() {
+        let input = "Pt";
+        let symbol = ElementSymbol::from_str(input);
+        assert!(symbol.is_ok());
+        println!("{:?}", symbol.unwrap());
+        let input = 3_u32;
+        let symbol = ElementSymbol::try_from(input);
+        assert!(symbol.is_ok());
+        println!("{:?}", symbol.unwrap());
     }
 }

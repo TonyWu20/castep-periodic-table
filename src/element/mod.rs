@@ -1,5 +1,3 @@
-extern crate serde;
-
 mod element_info;
 mod element_symbol;
 mod yaml_parser;
