@@ -2,7 +2,7 @@ use std::{fmt::Display, str::FromStr};
 
 use crate::data::ELEMENT_TABLE;
 
-use super::ElementSymbol;
+use super::{element_symbol::SymbolError, ElementSymbol};
 
 #[derive(Debug, Clone)]
 pub struct Element {
@@ -16,8 +16,11 @@ pub struct Element {
 }
 
 impl Element {
-    pub fn symbol(&self) -> String {
-        format!("{:?}", self.symbol)
+    pub fn symbol(&self) -> ElementSymbol {
+        self.symbol
+    }
+    pub fn symbol_to_string(&self) -> String {
+        format!("{}", self.symbol)
     }
 
     pub fn atomic_number(&self) -> u8 {
@@ -65,23 +68,17 @@ impl PartialOrd for Element {
     }
 }
 
-#[derive(Debug, PartialEq, PartialOrd)]
-pub struct ParseElementErr;
-
-impl Display for ParseElementErr {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Invalid element symbol!")
-    }
-}
-
 impl FromStr for Element {
-    type Err = ParseElementErr;
+    type Err = SymbolError;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
+        let symbol = ElementSymbol::from_str(s)?;
         ELEMENT_TABLE
-            .get_by_symbol(s)
+            .get_by_symbol(symbol)
             .cloned()
-            .ok_or(ParseElementErr)
+            .ok_or(SymbolError::Message(format!(
+                "Invalid input of element symbol: {s}"
+            )))
     }
 }
 
@@ -92,12 +89,12 @@ impl Display for Element {
 }
 
 pub trait LookupElement {
-    fn get_by_symbol(&self, symbol: &str) -> Option<&Element>;
+    fn get_by_symbol(&self, symbol: ElementSymbol) -> Option<&Element>;
     fn get_by_atomic_number(&self, atomic_number: u8) -> Option<&Element>;
 }
 
 impl LookupElement for [Element] {
-    fn get_by_symbol(&self, symbol: &str) -> Option<&Element> {
+    fn get_by_symbol(&self, symbol: ElementSymbol) -> Option<&Element> {
         self.iter().find(|item| item.symbol() == symbol)
     }
 

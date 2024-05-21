@@ -1,7 +1,11 @@
+use std::fmt::Display;
+
 use serde::Serialize;
 
 mod de;
 mod error;
+
+pub use error::SymbolError;
 
 #[derive(Eq, PartialEq, PartialOrd, Ord, Debug, Serialize, Clone, Copy)]
 pub enum ElementSymbol {
@@ -110,10 +114,16 @@ pub enum ElementSymbol {
     Lr,
 }
 
+impl Display for ElementSymbol {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{:?}", self)
+    }
+}
+
 impl PartialEq<&str> for ElementSymbol {
     fn eq(&self, other: &&str) -> bool {
-        let symbol_debug = format!("{:?}", self);
-        symbol_debug.as_str() == *other
+        let symbol = format!("{}", self);
+        symbol.as_str() == *other
     }
 }
 
