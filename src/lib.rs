@@ -1,5 +1,3 @@
-#![allow(dead_code)]
-
 pub mod data;
 pub mod element;
 
@@ -51,9 +49,7 @@ mod test {
         let element_h = ELEMENT_TABLE.get_by_atomic_number(0_u8).unwrap();
         println!("H: {:?}", element_h);
         println!("He: {:?}", ElementSymbol::He as u8);
-        let element_n = ELEMENT_TABLE
-            .get_by_symbol(ElementSymbol::from_str("N").unwrap())
-            .unwrap();
+        let element_n = ELEMENT_TABLE.get_by_symbol(ElementSymbol::from_str("N").unwrap());
         println!("Mass: {:?}", element_n.mass());
         println!("Mass: {:?}", element_co.mass());
         println!("Covalent_radius : {:?}", element_co.covalent_radius());

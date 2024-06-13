@@ -73,12 +73,7 @@ impl FromStr for Element {
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         let symbol = ElementSymbol::from_str(s)?;
-        ELEMENT_TABLE
-            .get_by_symbol(symbol)
-            .cloned()
-            .ok_or(SymbolError::Message(format!(
-                "Invalid input of element symbol: {s}"
-            )))
+        Ok(ELEMENT_TABLE.get_by_symbol(symbol).clone())
     }
 }
 
@@ -89,13 +84,19 @@ impl Display for Element {
 }
 
 pub trait LookupElement {
-    fn get_by_symbol(&self, symbol: ElementSymbol) -> Option<&Element>;
+    /// Breaking change:
+    /// Because now the input is strictly confined by enum `ElementSymbol` and
+    /// the `ELEMENT_TABLE` also uses `ElementSymbol`, this function should never
+    /// fail. No need to return `Option<&Element>`.
+    fn get_by_symbol(&self, symbol: ElementSymbol) -> &Element;
     fn get_by_atomic_number(&self, atomic_number: u8) -> Option<&Element>;
 }
 
 impl LookupElement for [Element] {
-    fn get_by_symbol(&self, symbol: ElementSymbol) -> Option<&Element> {
-        self.iter().find(|item| item.symbol() == symbol)
+    fn get_by_symbol(&self, symbol: ElementSymbol) -> &Element {
+        self.iter()
+            .find(|item| item.symbol() == symbol)
+            .expect("Internal error. This function should not failed.")
     }
 
     fn get_by_atomic_number(&self, atomic_number: u8) -> Option<&Element> {
