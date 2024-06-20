@@ -127,6 +127,31 @@ impl PartialEq<&str> for ElementSymbol {
     }
 }
 
+#[non_exhaustive]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum ElementFamily {
+    TransitionMetal3d,
+    TransitionMetal4d,
+    TransitionMetal5d,
+    RareEarthLa,
+    RareEarthAc,
+    Else,
+}
+
+impl ElementSymbol {
+    pub fn family(&self) -> ElementFamily {
+        let atomic_number = *self as usize;
+        match atomic_number {
+            21..=30 => ElementFamily::TransitionMetal3d,
+            39..=48 => ElementFamily::TransitionMetal4d,
+            72..=80 => ElementFamily::TransitionMetal5d,
+            57..=71 => ElementFamily::RareEarthLa,
+            89..=103 => ElementFamily::RareEarthAc,
+            _ => ElementFamily::Else,
+        }
+    }
+}
+
 #[cfg(test)]
 mod test {
 

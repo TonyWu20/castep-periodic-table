@@ -92,7 +92,7 @@ pub trait LookupElement {
     fn get_by_atomic_number(&self, atomic_number: u8) -> Option<&Element>;
 }
 
-impl LookupElement for [Element] {
+impl LookupElement for [Element; 103] {
     fn get_by_symbol(&self, symbol: ElementSymbol) -> &Element {
         self.iter()
             .find(|item| item.symbol() == symbol)
@@ -102,5 +102,30 @@ impl LookupElement for [Element] {
     fn get_by_atomic_number(&self, atomic_number: u8) -> Option<&Element> {
         self.iter()
             .find(|item| item.atomic_number() == atomic_number)
+    }
+}
+
+pub trait Conventions {
+    fn metals_3d(&self) -> &[Element];
+    fn metals_4d(&self) -> &[Element];
+    fn metals_5d(&self) -> &[Element];
+    fn rare_earth_la(&self) -> &[Element];
+}
+
+impl Conventions for [Element; 103] {
+    fn metals_3d(&self) -> &[Element] {
+        &self[20..30]
+    }
+
+    fn metals_4d(&self) -> &[Element] {
+        &self[38..48]
+    }
+
+    fn metals_5d(&self) -> &[Element] {
+        &self[71..80]
+    }
+
+    fn rare_earth_la(&self) -> &[Element] {
+        &self[56..71]
     }
 }

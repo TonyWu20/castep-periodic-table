@@ -5,7 +5,7 @@ pub mod element;
 mod test {
     use crate::{
         data::ELEMENT_TABLE,
-        element::{Element, ElementSymbol, ElementYamlTable, LookupElement},
+        element::{Conventions, Element, ElementSymbol, ElementYamlTable, LookupElement},
     };
 
     use std::{fs::File, io::Write, path::PathBuf, str::FromStr};
@@ -53,5 +53,9 @@ mod test {
         println!("Mass: {:?}", element_n.mass());
         println!("Mass: {:?}", element_co.mass());
         println!("Covalent_radius : {:?}", element_co.covalent_radius());
+        let d4 = ELEMENT_TABLE.metals_4d();
+        d4.iter().for_each(|elm| println!("{}", elm.symbol()));
+        let elm_sc = ElementSymbol::Sc;
+        println!("{:?}", elm_sc.family());
     }
 }
