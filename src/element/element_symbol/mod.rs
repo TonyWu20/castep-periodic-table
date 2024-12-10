@@ -7,7 +7,7 @@ mod error;
 
 pub use error::SymbolError;
 
-#[derive(Eq, PartialEq, PartialOrd, Ord, Debug, Serialize, Clone, Copy)]
+#[derive(Eq, PartialEq, PartialOrd, Ord, Debug, Serialize, Clone, Copy, Hash)]
 pub enum ElementSymbol {
     H,
     He = 2,
@@ -128,7 +128,7 @@ impl PartialEq<&str> for ElementSymbol {
 }
 
 #[non_exhaustive]
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum ElementFamily {
     TransitionMetal3d,
     TransitionMetal4d,
